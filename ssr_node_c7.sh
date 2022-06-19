@@ -124,7 +124,7 @@ do_modwebapi(){
 do_modwebapi
 do_service(){
 	echo "Writting system config..."
-	wget --no-check-certificate -O ssr_node.service https://raw.githubusercontent.com/SuicidalCat/Airport-toolkit/master/ssr_node.service.el7
+	wget --no-check-certificate -O ssr_node.service https://raw.githubusercontent.com/chennanpo/Airport-toolkit/master/ssr_node.service.el7
 	chmod 664 ssr_node.service && mv ssr_node.service /etc/systemd/system
 	echo "Starting SSR Node Service..."
 	systemctl daemon-reload && systemctl enable ssr_node && systemctl start ssr_node
